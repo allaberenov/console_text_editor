@@ -1,7 +1,6 @@
-from graph_interface import root
 import functions as func
 
-
+from graph_interface import root
 
 root.bind('<Control-s>', func.key_pressed)
 

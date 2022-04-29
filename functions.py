@@ -1,6 +1,7 @@
 import tkinter as tk
-from tkinter import messagebox, filedialog
+
 from graph_interface import root, text_fild, file_menu, main_menu
+from tkinter import messagebox, filedialog
 
 FILE_PATH = ""
 FILE_OPENED = False
@@ -16,7 +17,7 @@ def notepad_exit():
         ---
     """
 
-    ans = messagebox.askyesnocancel('Сохранение файла', 'Требуется ли сохранить файл?')
+    ans = messagebox.askyesnocancel('Сохранение файла', 'Сохранить файл?')
     if ans:
         if FILE_OPENED:
             save_opened_file()
